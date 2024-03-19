@@ -5,7 +5,7 @@ const Box=(props)=>{
     return (
         <div className='box'>
             <h1>{props.title}</h1>
-            <img alt="" className='item-img'
+            <img className='item-img'
             src={props.item&&props.item.img}
             />
             <h2>{props.result}</h2>

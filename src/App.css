@@ -1,7 +1,21 @@
 .box{
-  border:1px solid black;
+  border:2px solid black;
   width:500px;
 }
+
+.win {
+  border-color: green;
+}
+
+.lose {
+  border-color: red;
+}
+
+.tie {
+  border-color: black;
+}
+
+
 .item-img{
   width:400px;
 }

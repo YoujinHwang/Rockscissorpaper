@@ -38,6 +38,7 @@ function App() {
   const judgement=(user,computer)=>{
     console.log("user",user,"computer",computer);
 
+
     //user==computer tie
     //user==rock, computer==scissors user win
     //user==rock, computer==paper user lose
@@ -48,9 +49,9 @@ function App() {
 
     if(user.name===computer.name){
       return "tie"
-    }else if(user.name=="Rock")return computer.name=="Scissors"?"win":"lose"
-    else if(user.name=="Scissors")return computer.name=="Paper"?"win":"lose"
-    else return computer.name=="Rock"?"win":"lose"
+    }else if(user.name==="Rock")return computer.name==="Scissors"?"win":"lose"
+    else if(user.name==="Scissors")return computer.name==="Paper"?"win":"lose"
+    else return computer.name==="Rock"?"win":"lose"
   }
 
   const randomChoice=()=>{

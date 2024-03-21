@@ -25,9 +25,9 @@ const Box=(props)=>{
             <h1>{props.title}</h1>
             <img className='item-img'
             src={props.item&&props.item.img}
-            alt={`${props.title} choice`}
+            alt=''
             />
-            <h2>{result}</h2>
+            <h2>{props.item&&result}</h2>
         </div>
     )
 }

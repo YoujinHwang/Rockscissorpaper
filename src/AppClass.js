@@ -58,15 +58,16 @@ export default class AppClass extends Component {
 
     render() {
         return (
-        <div>
+        <div className="app">
+            <h1 className="title">🐾 가위 바위 보 게임 🐾</h1>
             <div className="main">
               <BoxClass title="You" item={this.state.userSelect} result={this.state.result}/>
               <BoxClass title="Computer" item={this.state.computerSelect} result={this.state.result}/>
             </div>
             <div className="main">
-              <button onClick={()=> this.play("scissors")}>가위</button>
-              <button onClick={()=> this.play("rock")}>바위</button>
-              <button onClick={()=> this.play("paper")}>보</button>
+              <button onClick={()=> this.play("scissors")}><span className="emoji">✌️</span></button>
+              <button onClick={()=> this.play("rock")}><span className="emoji">✊</span></button>
+              <button onClick={()=> this.play("paper")}> <span className="emoji">🖐️</span></button>
             </div>
         </div>
         )

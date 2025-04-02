@@ -1,7 +1,6 @@
 import React from "react";
 
 const Box = (props) => {
-
   //console.log("props",props);
   let result;
   let comResult;
@@ -13,7 +12,6 @@ const Box = (props) => {
       result = props.result;
     }
   } else result = "tie";
-
 
   // const boxClass=result==="win"?"green":
   //                 result==="lose"?"red":

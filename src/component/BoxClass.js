@@ -31,11 +31,15 @@ class BoxClass extends Component {
     return (
       <div className={`box ${this.result}`}>
         <h1>{this.props.title}</h1>
-        <img
-          className="item-img"
-          src={this.props.item && this.props.item.img}
-          alt=""
-        />
+
+        <div className="item-img-container">
+          {this.props.item ? (
+            <img className="item-img" src={this.props.item.img} alt="" />
+          ) : (
+            <div className="item-img-empty"></div>
+          )}
+        </div>
+
         <h2>
           {this.props.item &&
             (this.props.title === "You"

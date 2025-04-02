@@ -35,11 +35,20 @@ body {
   transition: all 0.3s ease;
 }
 
-.box img.item-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
+.item-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
+}
+.item-img,
+.item-img-empty {
+  width: 240px;
+  height: 210px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  object-fit: cover;
+  padding: 10px;
 }
 
 .box.win {
@@ -101,4 +110,72 @@ button:hover {
 
 button:hover .emoji {
   animation: bounce 0.4s ease-in-out;
+}
+
+.lives-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  gap: 12px;
+}
+
+.life {
+  width: 45px;
+  height: 45px;
+}
+
+.empty-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #aaa;
+  background-color: white;
+}
+
+.life-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.score-board {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff69b4;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.game-area {
+  position: relative;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: red;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px 100%;
+  border-radius: 20px;
+  z-index: 10;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.emoji {
+  font-size: 32px;
+  margin-right: 5px;
 }

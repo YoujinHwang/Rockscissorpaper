@@ -23,6 +23,7 @@ body {
   align-items: flex-start;
   gap: 30px;
   margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -178,4 +179,19 @@ button:hover .emoji {
 .emoji {
   font-size: 32px;
   margin-right: 5px;
+}
+
+@media (max-width: 600px) {
+  .score-board {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 18px;
+    width: 70px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
 }
